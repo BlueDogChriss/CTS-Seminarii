@@ -13,12 +13,14 @@ public class Tree implements Cloneable{
         System.out.println("Locatie X:"+l.x);
         System.out.println("Locatie Y:"+l.y);
     }
-public Object clone()
+
+@Override
+public Tree clone()
 {
-    Object clone = null;
+    Tree clone = null;
     try
     {
-        clone = super.clone();
+        clone = (Tree) super.clone();
     }
     catch (CloneNotSupportedException e) {
         e.printStackTrace();

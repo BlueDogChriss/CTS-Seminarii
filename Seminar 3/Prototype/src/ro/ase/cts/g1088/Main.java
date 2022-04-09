@@ -10,7 +10,7 @@ public class Main {
 
         Tree tree  = new Tree("cerc",10,"maro", "pin", new Locatie(10,20));
         listaCopaci.add(tree);
-        Tree tree2 = tree;
+        Tree tree2=tree.clone();
         tree2.plant(new Locatie(30,30));
         listaCopaci.add(tree2);
 
